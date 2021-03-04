@@ -1,4 +1,4 @@
-package calculo_solos;
+package Solo;
 
 public class Element {
 	
