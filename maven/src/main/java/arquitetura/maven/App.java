@@ -103,15 +103,7 @@ public class App {
     
 
 
-// if(C6 = 1){
-//       string solo = "Argiloso";
-//       double ideal = 0.33;
-//    }
-//    if(C6 = 2){
-//       solo = "Textura Média";
-//                ideal = 0.25;
-//    }
-    
+
 
 
 
