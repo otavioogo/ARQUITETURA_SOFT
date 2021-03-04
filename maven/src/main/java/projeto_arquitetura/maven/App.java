@@ -1,4 +1,4 @@
-package projeto_arquitetura.maven;
+package arquitetura.maven;
 
 import java.util.Scanner;
 
@@ -6,10 +6,10 @@ import calculo_solos.*;
 
 public class App {
 	
-   	Element elementy = new Element();
+   		Element elementy = new Element();
 
-    public static void main(String[] args) {
-    	Produtor dadosProd = new Produtor();
+    	public static void main(String[] args) {
+    		Produtor dadosProd = new Produtor();
     	
     	App app = new App();
    
@@ -55,7 +55,17 @@ public class App {
     	return elementy;
     }
     
+       public double somaScmol(Element elementy) {
+    	return elementy.getPotassio() + elementy.getCalcio() + elementy.getMagnesio();
+    }
+    public double somaCtc(Element elemento) {
+    	return somaScmol(elemento) + elemento.gethAl();
+    }
+    public double vAtual(Element elemento) {
+    	return 100 * somaScmol(elemento) / somaCtc(elemento);
+    }
     
+	
     public Produtor dadosRecebProp() {
     	Produtor dadosProd = new Produtor();
     	
@@ -100,20 +110,7 @@ public class App {
     	lerDadosProdutor.close();
     	return dadosProd;
     }
-    
-    
-    public double somaScmol(Element elementy) {
-    	return elementy.getPotassio() + elementy.getCalcio() + elementy.getMagnesio();
-    }
-    public double somaCtc(Element elemento) {
-    	return somaScmol(elemento) + elemento.gethAl();
-    }
-    public double vAtual(Element elemento) {
-    	return 100 * somaScmol(elemento) / somaCtc(elemento);
-    }
-    
-    
+   
 
-    
     
 }
