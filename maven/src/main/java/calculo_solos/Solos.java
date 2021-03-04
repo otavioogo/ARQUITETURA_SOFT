@@ -2,7 +2,7 @@ package calculo_solos;
 
 public class Solos {
 	
-//	podia fazer um if e depois retornar , mas preferir o mais simples.
+//	podia fazer uma funcao , e com o if retornar o elemento daria certo tambem
 	
 	
 	private Element soloIdeal(int tipoSolo) {
