@@ -38,3 +38,10 @@ public class Solos {
 		}
 	}
 }
+
+
+
+// if(C6 = 1){
+//       string solo = "Argiloso";
+//       double ideal = 0.33;
+//    }
