@@ -13,8 +13,7 @@ public class App {
     	
     	App app = new App();
    
-//    	dadosProd = app.dadosRecebProp();
-    	
+
     	app.elementy = app.elementRecebido();
     	 
     	System.out.println("cmol: " + app.somaScmol(app.elementy));
@@ -78,9 +77,6 @@ public class App {
 
     	System.out.println("Textura de Solo: ");
     	dadosProd.setTexturaSolo(lerDadosProdutor.nextInt());
-
-    	System.out.println("Sistema de Cultivo: ");
-    	dadosProd.setSistemaCultivo(lerDadosProdutor.nextInt());
     	
     	System.out.println("Responsável Técnico: ");
     	dadosProd.setRespTecnico(lerDadosProdutor.next());
@@ -96,6 +92,13 @@ public class App {
     }
     
     
+	
+	
+	
+	
+	
+	
+	
     public double somaScmol(Element1 elementy) {
     	return elementy.getPotassio() + elementy.getCalcio() + elementy.getMagnesio();
     }
